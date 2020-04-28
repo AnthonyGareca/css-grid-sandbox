@@ -1,20 +1,27 @@
-.post {
-  cursor: pointer;
-  position: relative;
-  display: block;
-}
 .post-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 293px));
   justify-content: center;
   gap: 28px;
 }
+.post {
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
 .post-image {
+  object-fit: cover;
+  border-radius: 20px;
   margin: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 .post-image img {
+  height: 100%;
   width: 100%;
   vertical-align: top;
+  object-fit: cover;
 }
 .post-overlay {
   background: rgba(0, 0, 0, .4);
@@ -28,13 +35,16 @@
   justify-content: center;
   color: white;
   text-align: center;
+  border-radius: 20px;
 }
 .post:hover .post-overlay {
   display: flex;
 }
-.post-likes, .post-comments {
+.post-likes,
+.post-comments {
   width: 80px;
   margin: 5px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   display: inline-block;

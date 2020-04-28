@@ -1,17 +1,21 @@
+.cells {
+  padding: 10px;
+}
+
 .container-grid-cells {
   display: grid;
   grid-template-columns: [start] 1fr 1fr 1fr [primary-content-end] 1fr 1fr [secondary-content-end] 1fr 1fr [end];
-  grid-template-rows: [top] 200px [middle] 200px [bottom];
-  gap:5px;
-  height: 100vh;
+  grid-template-rows: [top] 25vh [middle] 25vh [bottom];
+  gap: 5px;
+  height: 50vh;
   grid-auto-flow: column; /* <- by default is row */
   grid-auto-columns: 100px 1fr;
 }
 
 .item-grid-cells {
-  background: lightblue;
+  background: floralwhite;
   padding: 10px;
-  border: 1px solid red;
+  border: 2px solid black;
 }
 
 .item-grid-cells:nth-of-type(1) {

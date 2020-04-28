@@ -1,4 +1,6 @@
 .container-pntrst-layout {
+  width: 1000px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, 250px);
   gap: 5px;
@@ -6,12 +8,15 @@
   justify-items: center;
 }
 .item-pntrst-layout {
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 15px;
   background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item-pntrst-layout img {
   max-width: 100%;
+  object-fit: cover;
 }
 .level-1 {
   grid-row-end: span 1;

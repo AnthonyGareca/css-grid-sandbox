@@ -1,3 +1,7 @@
+.introduction {
+  padding: 10px;
+}
+
 .container-introduction {
   display: grid;
   /* grid-template: rows / columns; */
@@ -7,18 +11,18 @@
 }
 
 .item-introduction {
-  background: lightblue;
+  background: floralwhite;
   padding: 10px;
-  border: 1px solid red;
+  border: 2px solid black;
 }
 
 .item-introduction:nth-of-type(4) {
-  background: rebeccapurple;
+  background: darkseagreen;
   overflow: auto;
   display: grid;
   grid-template: 50px 50px 50px / 200px 200px 200px;
 }
 
 .item-introduction .item-introduction {
-  background: yellowgreen;
+  background: cornflowerblue;
 }
