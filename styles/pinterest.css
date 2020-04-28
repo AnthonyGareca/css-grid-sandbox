@@ -1,0 +1,24 @@
+.container-pntrst-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 5px;
+  justify-content: center;
+  justify-items: center;
+}
+.item-pntrst-layout {
+  border-radius: 5px;
+  padding: 10px;
+  background: #f2f2f2;
+}
+.item-pntrst-layout img {
+  max-width: 100%;
+}
+.level-1 {
+  grid-row-end: span 1;
+}
+.level-2 {
+  grid-row-end: span 2;
+}
+.level-3 {
+  grid-row-end: span 3;
+}

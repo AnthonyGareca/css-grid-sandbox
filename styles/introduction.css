@@ -1,0 +1,24 @@
+.container-introduction {
+  display: grid;
+  /* grid-template: rows / columns; */
+  grid-template: 300px 100px 100px / minmax(200px, 1fr) 1fr 1fr 1fr;
+  /* gap: rows columns; */
+  gap: 10px 10px;
+}
+
+.item-introduction {
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.item-introduction:nth-of-type(4) {
+  background: rebeccapurple;
+  overflow: auto;
+  display: grid;
+  grid-template: 50px 50px 50px / 200px 200px 200px;
+}
+
+.item-introduction .item-introduction {
+  background: yellowgreen;
+}

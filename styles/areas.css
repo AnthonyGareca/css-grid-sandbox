@@ -1,0 +1,31 @@
+.container-areas {
+  display: grid;
+  grid-template: 0.1fr 0.75fr 0.15fr/ 300px 1fr;
+  gap: 10px 10px;
+  height: 100vh;
+  grid-template-areas: "header header"
+                       "left content"
+                       "footer footer";
+}
+
+.item-areas {
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.header-areas {
+  grid-area: header;
+}
+
+.left-areas {
+  grid-area: left;
+}
+
+.content-areas {
+  grid-area: content;
+}
+
+.footer-areas {
+  grid-area: footer;
+}
